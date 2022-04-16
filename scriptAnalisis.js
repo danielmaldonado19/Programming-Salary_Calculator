@@ -21,17 +21,17 @@ function compare(a,b){
     return comparation;
 }
 
-function median(colombia){
-    let subIndex = parseInt(colombia.length / 2);
-    let medianNum1 = colombia[subIndex].salary;
-    let medianNum2 = colombia[subIndex - 1].salary;
+function median(array){
+    let subIndex = parseInt(array.length / 2);
+    let medianNum1 = array[subIndex].salary;
+    let medianNum2 = array[subIndex - 1].salary;
     let median;
     
-    if(colombia.length % 2 == 0){
+    if(array.length % 2 == 0){
         median = (medianNum1 + medianNum2) / 2;
     }
     else{
-        median = colombia[subIndex];
+        median = array[subIndex];
     }
     return median;
 }
