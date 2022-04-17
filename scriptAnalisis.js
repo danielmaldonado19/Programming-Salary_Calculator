@@ -12,6 +12,7 @@ NOTE: Each calculation has to be done for the 10% most wealthy people and the 90
 
 //1. Create the first country list.
 //2.Calculate the median.
+//3.Calculate the median for the top 10%
 */
 
 //2.
@@ -35,3 +36,9 @@ function median(array){
     }
     return median;
 }
+
+//3.
+var divisionPoint = colombia.length * (0.9);
+var top10People = colombia.length - divisionPoint;
+
+const top10Colombia = colombia.splice(divisionPoint, top10People);
